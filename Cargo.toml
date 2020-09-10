@@ -10,5 +10,3 @@ edition = "2018"
 num = "0.3.0"
 permutate = "0.3.2"
 itertools = "0.9.0"
-
-
