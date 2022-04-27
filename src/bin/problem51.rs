@@ -1,6 +1,6 @@
 use std::collections::HashSet;
 
-use ProjectEuler::NumberTheory::getPrimes;
+use ProjectEuler::NumberTheory::get_primes;
 
 const LIMIT: usize = 1_000_000;
 
@@ -53,7 +53,7 @@ fn dfs(deep: i32, nums: &mut Vec<i32>, isPrime: &Vec<bool>, head: bool) {
 }
 
 fn main() {
-    let primes = getPrimes(LIMIT);
+    let primes = get_primes(LIMIT);
     let isPrimes = {
         let mut tmp = vec![false; LIMIT];
         primes.iter().for_each(|&x| tmp[x as usize] = true);

@@ -1,6 +1,6 @@
-use ProjectEuler::NumberTheory::getPrimes;
+use ProjectEuler::NumberTheory::get_primes;
 fn main() {
-    let primes = getPrimes(1000_000);
+    let primes = get_primes(1000_000);
     let mut isPrime = vec![false; 1000_000];
     primes.iter().for_each(|&x| isPrime[x as usize] = true);
     let mut ans = (0, 0);

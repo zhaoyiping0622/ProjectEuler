@@ -1,9 +1,9 @@
 use itertools::Itertools;
 use std::collections::HashSet;
-use ProjectEuler::NumberTheory::getPrimes;
+use ProjectEuler::NumberTheory::get_primes;
 
 fn main() {
-    let primes = getPrimes(10_000);
+    let primes = get_primes(10_000);
     let mut isPrime = vec![false; 10_000];
     primes.into_iter().for_each(|x| isPrime[x as usize] = true);
     (1000..10000).for_each(|x| {
